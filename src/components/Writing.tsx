@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { writingItems, WritingType } from "@/content/writing";
+import { googleScholarUrl, writingItems, WritingType } from "@/content/writing";
 
 const TABS: { label: string; value: WritingType | "all" }[] = [
   { label: "All", value: "all" },
@@ -9,6 +9,16 @@ const TABS: { label: string; value: WritingType | "all" }[] = [
   { label: "Blog", value: "blog" },
   { label: "Talks", value: "talk" },
 ];
+
+const DISPLAY_LIMIT = 9;
+
+function writingSortKey(item: (typeof writingItems)[number]): number {
+  if (item.isPlaceholder || !item.date.trim()) return -1;
+  const parsed = Date.parse(item.date);
+  if (!Number.isNaN(parsed)) return parsed;
+  const year = Number(item.date.match(/\d{4}/)?.[0] ?? 0);
+  return year * 10_000;
+}
 
 const ArrowIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
@@ -18,10 +28,33 @@ const ArrowIcon = () => (
 
 export default function Writing() {
   const [active, setActive] = useState<WritingType | "all">("all");
+  const [expanded, setExpanded] = useState(false);
 
-  const items = active === "all"
+  const sorted = (active === "all"
     ? writingItems
-    : writingItems.filter((w) => w.type === active);
+    : writingItems.filter((w) => w.type === active)
+  )
+    .slice()
+    .sort((a, b) => writingSortKey(b) - writingSortKey(a));
+
+  const items =
+    active === "all" && !expanded ? sorted.slice(0, DISPLAY_LIMIT) : sorted;
+
+  const hasMore = active === "all" && sorted.length > DISPLAY_LIMIT;
+
+  function handleTabClick(value: WritingType | "all") {
+    if (value === "all") {
+      if (active === "all") {
+        setExpanded((prev) => !prev);
+      } else {
+        setActive("all");
+        setExpanded(true);
+      }
+      return;
+    }
+    setActive(value);
+    setExpanded(false);
+  }
 
   return (
     <section style={{ padding: "0 40px 120px" }}>
@@ -30,10 +63,10 @@ export default function Writing() {
         {/* Header row */}
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "24px", flexWrap: "wrap", gap: "16px" }}>
           <h2 style={headingStyle}>
-            Writing<span style={{ color: "var(--accent)" }}>.</span>
+            Writing<span style={{ color: "var(--accent)" }}>.</span> Blogging<span style={{ color: "var(--accent)" }}>.</span> Talking<span style={{ color: "var(--accent)" }}>.</span>
           </h2>
           <a
-            href="https://scholar.google.com"
+            href={googleScholarUrl}
             target="_blank"
             rel="noopener noreferrer"
             style={{ fontSize: "13px", color: "var(--muted)", transition: "color 0.15s" }}
@@ -49,7 +82,7 @@ export default function Writing() {
           {TABS.map((tab) => (
             <button
               key={tab.value}
-              onClick={() => setActive(tab.value)}
+              onClick={() => handleTabClick(tab.value)}
               style={{
                 padding: "8px 18px",
                 fontSize: "12px",
@@ -158,6 +191,52 @@ export default function Writing() {
             )
           )}
         </div>
+
+        {hasMore && (
+          <p style={{ marginTop: "16px", fontSize: "12px", color: "var(--muted)" }}>
+            {expanded ? (
+              <>
+                Showing all {sorted.length} entries.{" "}
+                <button
+                  type="button"
+                  onClick={() => setExpanded(false)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    padding: 0,
+                    color: "var(--accent)",
+                    cursor: "pointer",
+                    fontSize: "12px",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                  }}
+                >
+                  Show latest {DISPLAY_LIMIT}
+                </button>
+              </>
+            ) : (
+              <>
+                Showing latest {DISPLAY_LIMIT} of {sorted.length}.{" "}
+                <button
+                  type="button"
+                  onClick={() => setExpanded(true)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    padding: 0,
+                    color: "var(--accent)",
+                    cursor: "pointer",
+                    fontSize: "12px",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                  }}
+                >
+                  Show all
+                </button>
+              </>
+            )}
+          </p>
+        )}
       </div>
 
       <style>{`

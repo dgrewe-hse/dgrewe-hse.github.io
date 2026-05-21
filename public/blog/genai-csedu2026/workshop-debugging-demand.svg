@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-label="Debugging confidence vs demand for AI-supported practice">
+  <rect width="560" height="380" fill="#0a0a0a"/>
+
+  <!-- Legend -->
+  <rect x="120" y="18" width="12" height="12" fill="#555" stroke="#444"/>
+  <text x="138" y="28" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="12">Skill confidence</text>
+  <rect x="280" y="18" width="12" height="12" fill="#1e3a66" stroke="#142844"/>
+  <text x="298" y="28" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="12">Requested practice topic</text>
+
+  <!-- Y-axis label -->
+  <text x="18" y="200" fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="12" transform="rotate(-90 18 200)">Percentage (%)</text>
+
+  <!-- Grid -->
+  <g stroke="#333" stroke-width="1">
+    <line x1="60" y1="300" x2="520" y2="300"/>
+    <line x1="60" y1="80" x2="520" y2="80" stroke-dasharray="2,4"/>
+    <line x1="60" y1="124.4" x2="520" y2="124.4" stroke-dasharray="2,4"/>
+    <line x1="60" y1="168.9" x2="520" y2="168.9" stroke-dasharray="2,4"/>
+    <line x1="60" y1="213.3" x2="520" y2="213.3" stroke-dasharray="2,4"/>
+    <line x1="60" y1="257.8" x2="520" y2="257.8" stroke-dasharray="2,4"/>
+  </g>
+  <g fill="#666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="end">
+    <text x="52" y="304">0</text>
+    <text x="52" y="260">10</text>
+    <text x="52" y="217">20</text>
+    <text x="52" y="173">30</text>
+    <text x="52" y="129">40</text>
+    <text x="52" y="84">50</text>
+  </g>
+
+  <!-- Scale: 0-50%, range 220px / 50 = 4.4px per percent -->
+
+  <!-- Confident debugging: 30% -->
+  <rect x="180" y="168.0" width="40" height="132.0" fill="#555" stroke="#444"/>
+  <text x="200" y="160" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle">30%</text>
+
+  <!-- Requested debugging practice: 31.8% -->
+  <rect x="340" y="160.1" width="40" height="139.9" fill="#1e3a66" stroke="#142844"/>
+  <text x="360" y="152" fill="#8cb4e8" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle">31.8%</text>
+
+  <!-- X-axis labels -->
+  <g fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle">
+    <text x="200" y="322"><tspan x="200" dy="0">Confident in</tspan><tspan x="200" dy="14">debugging</tspan></text>
+    <text x="360" y="322"><tspan x="360" dy="0">Requested debugging</tspan><tspan x="360" dy="14">practice with AI</tspan></text>
+  </g>
+</svg>

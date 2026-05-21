@@ -1,18 +1,27 @@
 "use client";
 
 const courses = [
-  { code: "CV-401", name: "Computer Vision", level: "B.Sc.", semester: "Semester 5" },
-  { code: "ML-301", name: "Machine Learning", level: "B.Sc.", semester: "Semester 4" },
-  { code: "ES-201", name: "Embedded Systems", level: "B.Sc.", semester: "Semester 3" },
-  { code: "AML-501", name: "AutoML & Neural Architecture Search", level: "M.Sc.", semester: "Semester 1" },
-  { code: "EAI-601", name: "Edge AI Research Seminar", level: "M.Sc.", semester: "Semester 2" },
+  { code: "IT 105 1015", name: "Programming in C", level: "B.Sc.", semester: "Esslingen" },
+  {
+    code: "IT 105 2004",
+    name: "Operating Systems",
+    level: "B.Sc.",
+    semester: "with Prof. Dr. Rainer Keller",
+  },
+  { code: "SWB 105 6043", name: "Software Quality and Testing", level: "B.Sc.", semester: "Esslingen" },
+  {
+    code: "AI W03",
+    name: "Mobile Communication",
+    level: "M.Sc.",
+    semester: "with Prof. Dr. Dominik Schoop",
+  },
 ];
 
 const milestones = [
-  { value: "12+ years", label: "researching & teaching" },
-  { value: "Computer Vision", label: "lecture series developed" },
+  { value: "10+ years", label: "researching & teaching" },
+  { value: "Software Testing", label: "lecture module (English)" },
   { value: "30+ publications", label: "peer-reviewed research" },
-  { value: "200+ students", label: "per year at HSE Hannover" },
+  { value: "4 modules", label: "taught at HSE Esslingen" },
 ];
 
 export default function Fragments() {
@@ -186,9 +195,9 @@ export default function Fragments() {
               <span style={{ color: "#fff" }}>init skills</span>
             </p>
             <p style={{ color: "#4ade80" }}>
-              ✓ Loaded embedded-ai.exe
+              ✓ Loaded distributed-systems.exe
             </p>
-            <p style={{ color: "#4ade80" }}>✓ Cached 12 research years.</p>
+            <p style={{ color: "#4ade80" }}>✓ Cached 10 research years.</p>
             <p style={{ color: "#4ade80" }}>✓ Rendering lecture slides.</p>
             <p style={{ color: "#4ade80" }}>✓ Removing imposter module.</p>
             <p style={{ color: "#fff", marginTop: "8px" }}>
@@ -223,10 +232,10 @@ export default function Fragments() {
                 marginBottom: "8px",
               }}
             >
-              6+ years at HSE
+              Professor since 2024
             </p>
             <p style={{ fontSize: "13px", color: "var(--muted)", lineHeight: 1.6 }}>
-              Leading research and teaching in computer science, AI, and embedded systems.
+              Teaching distributed systems, software testing, and mobile communication at Esslingen University of Applied Sciences.
             </p>
           </div>
 
@@ -271,57 +280,14 @@ export default function Fragments() {
             }}
           >
             <p style={{ fontSize: "15px", fontWeight: 600, color: "#fff", marginBottom: "8px" }}>
-              I used to write C++ for cars
+              I used to research in-vehicle networks
             </p>
             <p style={{ fontSize: "13px", color: "var(--muted)", lineHeight: 1.6, flex: 1 }}>
-              During 3 years at Continental AG as a fullstack embedded engineer.
+              Four years at Bosch Research on connected vehicles — CAN, Automotive Ethernet, and in-network computing.
             </p>
           </div>
         </div>
       </div>
-
-        {/* Courses row */}
-        <div
-          style={{
-            border: "1px solid var(--border)",
-            background: "var(--bg-card)",
-            padding: "32px",
-            marginTop: "2px",
-          }}
-        >
-          <p style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.08em", color: "var(--accent)", textTransform: "uppercase", marginBottom: "20px" }}>
-            Courses I teach
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "2px" }} className="courses-list">
-            {courses.map((c) => (
-              <div
-                key={c.code}
-                style={{
-                  flex: "1 1 180px",
-                  border: "1px solid var(--border)",
-                  background: "#0a0a0a",
-                  padding: "16px 20px",
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "6px",
-                }}
-              >
-                <span style={{ fontSize: "10px", color: "var(--muted)", letterSpacing: "0.06em", fontFamily: '"SF Mono","Fira Mono","Consolas",monospace' }}>
-                  {c.code}
-                </span>
-                <p style={{ fontSize: "13px", fontWeight: 600, color: "#fff", lineHeight: 1.3 }}>
-                  {c.name}
-                </p>
-                <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-                  <span style={{ fontSize: "11px", color: "var(--accent)", border: "1px solid rgba(57,255,20,0.3)", borderRadius: "100px", padding: "1px 7px" }}>
-                    {c.level}
-                  </span>
-                  <span style={{ fontSize: "11px", color: "var(--muted)" }}>{c.semester}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
       <style>{`
         @media (max-width: 900px) {

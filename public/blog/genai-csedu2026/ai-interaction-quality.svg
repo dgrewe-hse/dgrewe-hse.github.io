@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-label="Behavioural observations of AI interaction quality">
+  <rect width="560" height="380" fill="#0a0a0a"/>
+
+  <!-- Legend -->
+  <rect x="150" y="18" width="12" height="12" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <text x="168" y="28" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="12">Group A (Control)</text>
+  <rect x="300" y="18" width="12" height="12" fill="#1e3a66" stroke="#142844"/>
+  <text x="318" y="28" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="12">Group B (Experimental)</text>
+
+  <!-- Y-axis label -->
+  <text x="18" y="200" fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="12" transform="rotate(-90 18 200)">Percentage (%)</text>
+
+  <!-- Grid + Y ticks (0-75) -->
+  <g stroke="#333" stroke-width="1">
+    <line x1="60" y1="300" x2="520" y2="300"/>
+    <line x1="60" y1="80" x2="520" y2="80" stroke-dasharray="2,4"/>
+    <line x1="60" y1="124.4" x2="520" y2="124.4" stroke-dasharray="2,4"/>
+    <line x1="60" y1="168.9" x2="520" y2="168.9" stroke-dasharray="2,4"/>
+    <line x1="60" y1="213.3" x2="520" y2="213.3" stroke-dasharray="2,4"/>
+    <line x1="60" y1="257.8" x2="520" y2="257.8" stroke-dasharray="2,4"/>
+  </g>
+  <g fill="#666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="end">
+    <text x="52" y="304">0</text>
+    <text x="52" y="260">20</text>
+    <text x="52" y="217">40</text>
+    <text x="52" y="173">60</text>
+    <text x="52" y="84">75</text>
+  </g>
+
+  <!-- Scale: y=300 is 0, y=80 is 75. Range 220px / 75 = 2.93px per percent -->
+
+  <!-- (1) Critical eval: A=55.6, B=66.7 -->
+  <rect x="98" y="137.1" width="14" height="162.9" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <rect x="116" y="104.6" width="14" height="195.4" fill="#1e3a66" stroke="#142844"/>
+
+  <!-- (2) Code mod: A=22.2, B=61.1 -->
+  <rect x="198" y="235.0" width="14" height="65.0" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <rect x="216" y="121.1" width="14" height="178.9" fill="#1e3a66" stroke="#142844"/>
+
+  <!-- (3) Output rejection: A=16.7, B=38.9 -->
+  <rect x="318" y="251.1" width="14" height="48.9" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <rect x="336" y="186.0" width="14" height="114.0" fill="#1e3a66" stroke="#142844"/>
+
+  <!-- (4) Code similarity: A=64.9, B=45.4 -->
+  <rect x="438" y="110.0" width="14" height="190.0" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <rect x="456" y="167.0" width="14" height="133.0" fill="#1e3a66" stroke="#142844"/>
+
+  <!-- X-axis labels -->
+  <g fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle">
+    <text x="112" y="322"><tspan x="112" dy="0">Critical</tspan><tspan x="112" dy="14">eval.</tspan></text>
+    <text x="212" y="322"><tspan x="212" dy="0">Code</tspan><tspan x="212" dy="14">mod.</tspan></text>
+    <text x="332" y="322"><tspan x="332" dy="0">Output</tspan><tspan x="332" dy="14">rejection</tspan></text>
+    <text x="452" y="322"><tspan x="452" dy="0">Code</tspan><tspan x="452" dy="14">similarity</tspan></text>
+  </g>
+</svg>

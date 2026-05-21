@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-label="AI chatbot usage among workshop participants">
+  <rect width="560" height="380" fill="#0a0a0a"/>
+
+  <!-- Y-axis label -->
+  <text x="18" y="200" fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="12" transform="rotate(-90 18 200)">Percentage (%)</text>
+
+  <!-- Grid -->
+  <g stroke="#333" stroke-width="1">
+    <line x1="60" y1="300" x2="520" y2="300"/>
+    <line x1="60" y1="80" x2="520" y2="80" stroke-dasharray="2,4"/>
+    <line x1="60" y1="124.4" x2="520" y2="124.4" stroke-dasharray="2,4"/>
+    <line x1="60" y1="168.9" x2="520" y2="168.9" stroke-dasharray="2,4"/>
+    <line x1="60" y1="213.3" x2="520" y2="213.3" stroke-dasharray="2,4"/>
+    <line x1="60" y1="257.8" x2="520" y2="257.8" stroke-dasharray="2,4"/>
+  </g>
+  <g fill="#666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="end">
+    <text x="52" y="304">0</text>
+    <text x="52" y="260">20</text>
+    <text x="52" y="217">40</text>
+    <text x="52" y="173">60</text>
+    <text x="52" y="84">80</text>
+  </g>
+
+  <!-- Scale: 0-80%, range 220px -->
+  <!-- Daily 55% -->
+  <rect x="110" y="149.3" width="40" height="150.7" fill="#1e3a66" stroke="#142844"/>
+  <!-- Frequently 21.2% -->
+  <rect x="210" y="241.7" width="40" height="58.3" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <!-- Occasionally 18.8% -->
+  <rect x="310" y="248.3" width="40" height="51.7" fill="#555" stroke="#444"/>
+  <!-- Never 5% -->
+  <rect x="410" y="286.3" width="40" height="13.7" fill="#333" stroke="#222"/>
+
+  <!-- Value labels -->
+  <g fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle">
+    <text x="130" y="142">55%</text>
+    <text x="230" y="235">21.2%</text>
+    <text x="330" y="242">18.8%</text>
+    <text x="430" y="280">5%</text>
+  </g>
+
+  <!-- X-axis labels -->
+  <g fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle">
+    <text x="130" y="328">Daily</text>
+    <text x="230" y="322"><tspan x="230" dy="0">Frequently</tspan><tspan x="230" dy="14">(&gt;10x)</tspan></text>
+    <text x="330" y="328">Occasionally</text>
+    <text x="430" y="328">Never</text>
+  </g>
+
+  <text x="280" y="28" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle">Workshop cohort (n=80) - 76% daily or frequent usage</text>
+</svg>

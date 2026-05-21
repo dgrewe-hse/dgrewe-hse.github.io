@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" role="img" aria-label="Pre-test results comparing Group A and Group B">
+  <rect width="560" height="380" fill="#0a0a0a"/>
+
+  <!-- Legend -->
+  <rect x="150" y="18" width="12" height="12" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <text x="168" y="28" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="12">Group A (Control)</text>
+  <rect x="300" y="18" width="12" height="12" fill="#1e3a66" stroke="#142844"/>
+  <text x="318" y="28" fill="#ccc" font-family="Arial, Helvetica, sans-serif" font-size="12">Group B (Experimental)</text>
+
+  <!-- Y-axis label -->
+  <text x="18" y="200" fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="12" transform="rotate(-90 18 200)">Score</text>
+
+  <!-- Grid + Y ticks (0-9) -->
+  <g stroke="#333" stroke-width="1">
+    <line x1="60" y1="300" x2="520" y2="300"/>
+    <line x1="60" y1="80" x2="520" y2="80" stroke-dasharray="2,4"/>
+    <line x1="60" y1="124.4" x2="520" y2="124.4" stroke-dasharray="2,4"/>
+    <line x1="60" y1="168.9" x2="520" y2="168.9" stroke-dasharray="2,4"/>
+    <line x1="60" y1="213.3" x2="520" y2="213.3" stroke-dasharray="2,4"/>
+    <line x1="60" y1="257.8" x2="520" y2="257.8" stroke-dasharray="2,4"/>
+  </g>
+  <g fill="#666" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="end">
+    <text x="52" y="304">0</text>
+    <text x="52" y="260">2</text>
+    <text x="52" y="217">4</text>
+    <text x="52" y="173">6</text>
+    <text x="52" y="129">8</text>
+    <text x="52" y="84">9</text>
+  </g>
+
+  <!-- Scale: y=300 is 0, y=80 is 9. Range 220px / 9 = 24.44px per unit -->
+  <!-- Category 1: Self-assessed competence -->
+  <rect x="118" y="233.5" width="14" height="66.5" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <rect x="136" y="243.0" width="14" height="57.0" fill="#1e3a66" stroke="#142844"/>
+  <!-- Error bars A: 2.72 +/- 0.67 -->
+  <line x1="125" y1="217.1" x2="125" y2="250.0" stroke="#5a8fc7" stroke-width="1.5"/>
+  <line x1="121" y1="217.1" x2="129" y2="217.1" stroke="#5a8fc7" stroke-width="1.5"/>
+  <line x1="121" y1="250.0" x2="129" y2="250.0" stroke="#5a8fc7" stroke-width="1.5"/>
+  <!-- Error bars B: 2.33 +/- 0.84 -->
+  <line x1="143" y1="222.5" x2="143" y2="263.5" stroke="#8cb4e8" stroke-width="1.5"/>
+  <line x1="139" y1="222.5" x2="147" y2="222.5" stroke="#8cb4e8" stroke-width="1.5"/>
+  <line x1="139" y1="263.5" x2="147" y2="263.5" stroke="#8cb4e8" stroke-width="1.5"/>
+
+  <!-- Category 2: Programming test -->
+  <rect x="258" y="149.3" width="14" height="150.7" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <rect x="276" y="142.6" width="14" height="157.4" fill="#1e3a66" stroke="#142844"/>
+  <!-- Error bars A: 6.17 +/- 1.58 -->
+  <line x1="265" y1="110.7" x2="265" y2="188.0" stroke="#5a8fc7" stroke-width="1.5"/>
+  <line x1="261" y1="110.7" x2="269" y2="110.7" stroke="#5a8fc7" stroke-width="1.5"/>
+  <line x1="261" y1="188.0" x2="269" y2="188.0" stroke="#5a8fc7" stroke-width="1.5"/>
+  <!-- Error bars B: 6.44 +/- 2.23 -->
+  <line x1="283" y1="88.1" x2="283" y2="192.1" stroke="#8cb4e8" stroke-width="1.5"/>
+  <line x1="279" y1="88.1" x2="287" y2="88.1" stroke="#8cb4e8" stroke-width="1.5"/>
+  <line x1="279" y1="192.1" x2="287" y2="192.1" stroke="#8cb4e8" stroke-width="1.5"/>
+
+  <!-- Category 3: Perceived AI usefulness -->
+  <rect x="398" y="185.3" width="14" height="114.7" fill="#8cb4e8" stroke="#5a8fc7"/>
+  <rect x="416" y="189.3" width="14" height="110.7" fill="#1e3a66" stroke="#142844"/>
+  <!-- Error bars A: 4.69 +/- 0.60 -->
+  <line x1="405" y1="170.6" x2="405" y2="200.0" stroke="#5a8fc7" stroke-width="1.5"/>
+  <line x1="401" y1="170.6" x2="409" y2="170.6" stroke="#5a8fc7" stroke-width="1.5"/>
+  <line x1="401" y1="200.0" x2="409" y2="200.0" stroke="#5a8fc7" stroke-width="1.5"/>
+  <!-- Error bars B: 4.53 +/- 0.51 -->
+  <line x1="423" y1="176.8" x2="423" y2="201.8" stroke="#8cb4e8" stroke-width="1.5"/>
+  <line x1="419" y1="176.8" x2="427" y2="176.8" stroke="#8cb4e8" stroke-width="1.5"/>
+  <line x1="419" y1="201.8" x2="427" y2="201.8" stroke="#8cb4e8" stroke-width="1.5"/>
+
+  <!-- X-axis labels -->
+  <g fill="#aaa" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="middle">
+    <text x="132" y="322"><tspan x="132" dy="0">Self-assessed</tspan><tspan x="132" dy="14">competence</tspan></text>
+    <text x="272" y="322"><tspan x="272" dy="0">Program.</tspan><tspan x="272" dy="14">test</tspan></text>
+    <text x="412" y="322"><tspan x="412" dy="0">Perceived</tspan><tspan x="412" dy="14">AI usefulness</tspan></text>
+  </g>
+</svg>

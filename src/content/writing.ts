@@ -11,57 +11,154 @@ export interface WritingItem {
   isPlaceholder?: boolean;
 }
 
-// ─── Papers ──────────────────────────────────────────────────────────────────
-// Replace link: "#" with the actual DOI / PDF / Google Scholar URL.
+const SCHOLAR =
+  "https://scholar.google.com/citations?user=5wKVtcMAAAAJ&hl=en";
 
-// ─── Blog & talks ─────────────────────────────────────────────────────────────
-// Add real entries as you write them. isPlaceholder cards render differently.
+function scholarCitation(id: string) {
+  return `${SCHOLAR.split("?")[0]}?view_op=view_citation&hl=en&user=5wKVtcMAAAAJ&citation_for_view=5wKVtcMAAAAJ:${id}`;
+}
+
+// Top publications from Google Scholar (by citation count).
+// Full list: https://scholar.google.com/citations?user=5wKVtcMAAAAJ&hl=en
 
 export const writingItems: WritingItem[] = [
   {
     type: "paper",
-    title: "Constraint-Aware Neural Architecture Search for Embedded AI Systems",
-    venue: "IEEE COINS 2023",
+    title:
+      "Using Generative AI in Higher Programming Education: An Empirical Evaluation",
+    venue: "CSEDU 2026",
     preview:
-      "A hardware-in-the-loop NAS framework that integrates latency and energy constraints directly into the search objective, yielding models deployable on Cortex-M microcontrollers without post-hoc pruning.",
-    date: "Jun 2023",
-    link: "#",
+      "Controlled experiment (n=36) comparing guided vs. unguided GenAI use in introductory C programming. Structured guidance improved solution understanding and reflective AI interaction — without changing task performance.",
+    date: "2026",
+    link: "/writing/genai-programming-education-csedu2026",
+    slug: "genai-programming-education-csedu2026",
   },
   {
     type: "paper",
-    title: "Federated Learning on Heterogeneous IoT Networks: A Privacy-First Approach",
-    venue: "IEEE IoTJ 2022",
+    title:
+      "A Domain-Specific Comparison of Information-Centric Networking Architectures for Connected Vehicles",
+    venue: "IEEE Communications Surveys & Tutorials",
     preview:
-      "Addresses non-IID data drift and communication bottlenecks across heterogeneous edge nodes. Proposes an adaptive aggregation scheme with differential privacy guarantees.",
-    date: "Sep 2022",
-    link: "#",
+      "Survey comparing ICN architectures for vehicular networking — caching, naming, mobility, and deployment trade-offs in connected-vehicle environments.",
+    date: "2018",
+    link: scholarCitation("O3NaXMp0MMsC"),
   },
   {
     type: "paper",
-    title: "TinyML Benchmark: Evaluating Inference on ARM Cortex-M Devices",
-    venue: "ACM LCTES 2021",
+    title:
+      "Information-Centric Mobile Edge Computing for Connected Vehicle Environments: Challenges and Research Directions",
+    venue: "Workshop on Mobile Edge Communications",
     preview:
-      "A reproducible benchmark suite covering classification, detection, and keyword spotting on sub-mW microcontrollers, with open-source tooling for community-driven evaluation.",
-    date: "Jun 2021",
-    link: "#",
+      "Outlines how mobile edge computing and information-centric networking intersect in connected vehicles, with open challenges and research directions.",
+    date: "2017",
+    link: scholarCitation("2osOgNQ5qMEC"),
   },
   {
     type: "paper",
-    title: "AutoML for Edge: Automated Model Compression via Knowledge Distillation",
-    venue: "ECML-PKDD 2020",
+    title: "PeRCeIVE: Proactive Caching in ICN-Based VANETs",
+    venue: "IEEE VNC 2016",
     preview:
-      "Combines neural architecture search with structured pruning and knowledge distillation into a single pipeline, reducing manual effort for edge model design by over 80%.",
-    date: "Sep 2020",
-    link: "#",
+      "Proactive caching strategy for information-centric vehicular ad hoc networks to reduce latency and improve content availability at the edge.",
+    date: "2016",
+    link: scholarCitation("u5HHmVD_uO8C"),
+  },
+  {
+    type: "paper",
+    title:
+      "Softwarization of Automotive E/E Architectures: A Software-Defined Networking Approach",
+    venue: "IEEE VNC 2020",
+    preview:
+      "Applies software-defined networking to automotive electrical/electronic architectures for more flexible in-vehicle communication.",
+    date: "2020",
+    link: scholarCitation("ldfaerwXgEUC"),
+  },
+  {
+    type: "paper",
+    title:
+      "Reimagining Automotive Service-Oriented Communication: A Case Study on Programmable Data Planes",
+    venue: "IEEE Vehicular Technology Magazine",
+    preview:
+      "Case study on programmable data planes for automotive service-oriented communication, bridging SDN concepts with in-vehicle networking.",
+    date: "2023",
+    link: scholarCitation("u_35RYKgDlwC"),
+  },
+  {
+    type: "paper",
+    title:
+      "Automotive Container Orchestration: Requirements, Challenges and Open Directions",
+    venue: "IEEE VNC 2023",
+    preview:
+      "Analyzes container orchestration for automotive platforms — requirements, challenges, and open research directions for software-defined vehicles.",
+    date: "2023",
+    link: scholarCitation("fPk4N6BV_jEC"),
+  },
+  {
+    type: "paper",
+    title: "DICer: Distributed Coordination for In-Network Computations",
+    venue: "ACM ICN 2022",
+    preview:
+      "Coordination framework for distributing computations across in-network nodes in information-centric vehicular environments.",
+    date: "2022",
+    link: scholarCitation("rO6llkc54NcC"),
+  },
+  {
+    type: "paper",
+    title:
+      "ADePt: Adaptive Distributed Content Prefetching for Information-Centric Connected Vehicles",
+    venue: "IEEE VTC Spring 2018",
+    preview:
+      "Adaptive prefetching for ICN-based connected vehicles — anticipates content demand across distributed caches in VANETs.",
+    date: "2018",
+    link: scholarCitation("NaGl4SEjCO4C"),
+  },
+  {
+    type: "paper",
+    title:
+      "Caching-as-a-Service in Virtualized Caches for Information-Centric Connected Vehicle Environments",
+    venue: "IEEE VNC 2018",
+    preview:
+      "Virtualized caching service model for ICN in connected vehicles, enabling flexible cache allocation across the vehicular edge.",
+    date: "2018",
+    link: scholarCitation("vV6vV6tmYwMC"),
+  },
+  {
+    type: "paper",
+    title:
+      "On the Design of an Information-Centric Networking Extension for IoT APIs",
+    venue: "IEEE VTC 2021",
+    preview:
+      "Extends ICN principles to IoT API design, enabling more efficient data exchange in connected vehicle and edge IoT systems.",
+    date: "2021",
+    link: scholarCitation("HoB7MX3m0LUC"),
+  },
+  {
+    type: "paper",
+    title:
+      "A Real World Information-Centric Connected Vehicle Testbed Supporting ETSI ITS-G5",
+    venue: "IEEE EuCNC 2018",
+    preview:
+      "Describes a real-world ICN testbed for connected vehicles with ETSI ITS-G5 support — bridging research prototypes and road-ready validation.",
+    date: "2018",
+    link: scholarCitation("J_g5lzvAfSwC"),
+  },
+  {
+    type: "paper",
+    title:
+      "ICN-Based Open, Distributed Data Marketplace for Connected Vehicles: Challenges and Research Directions",
+    venue: "IEEE ICC Workshops 2017",
+    preview:
+      "Explores an open data marketplace model for connected vehicles built on information-centric networking principles.",
+    date: "2017",
+    link: scholarCitation("9yKSN-GCB0IC"),
   },
   {
     type: "blog",
-    title: "Why Embedded AI Matters More Than You Think",
+    title: "How Do Programming Novices Use AI — and Are We Teaching It the Right Way?",
     preview:
-      "Most engineers only think about cloud inference. But the next wave of AI runs on hardware you can hold in your hand — and the constraints make it interesting.",
-    date: "Aug 2025",
-    link: "/writing/why-embedded-ai-matters",
-    slug: "why-embedded-ai-matters",
+      "Students already use AI to code. Our experiment at Esslingen University shows that without structured guidance, they offload tasks instead of learning — and what we changed in our introductory programming course.",
+    date: "May 2026",
+    link: "/writing/genai-programming-education-csedu2026",
+    slug: "genai-programming-education-csedu2026",
   },
   {
     type: "talk",
@@ -74,3 +171,5 @@ export const writingItems: WritingItem[] = [
     isPlaceholder: true,
   },
 ];
+
+export const googleScholarUrl = SCHOLAR;

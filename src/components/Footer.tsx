@@ -1,10 +1,9 @@
 "use client";
 
 const socials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/dennis-grewe" },
-  { label: "Google Scholar", href: "https://scholar.google.com" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/profgrewe/" },
+  { label: "Google Scholar", href: "https://scholar.google.com/citations?user=5wKVtcMAAAAJ&hl=en" },
   { label: "GitHub", href: "https://github.com/dgrewe-hse" },
-  { label: "X", href: "https://twitter.com" },
 ];
 
 export default function Footer() {
@@ -27,7 +26,7 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: "13px", color: "var(--muted)" }}>
-            dgrewe.github.io/
+            dgrewe-hse.github.io/
           </p>
           <nav style={{ display: "flex", gap: "24px" }}>
             {socials.map((s) => (
@@ -58,10 +57,10 @@ export default function Footer() {
           }}
         >
           <p style={{ fontSize: "12px", color: "#333" }}>
-            Designed &amp; coded by me.
+            Inspired by others &amp; coded by Claude.
           </p>
           <div style={{ display: "flex", gap: "24px" }}>
-            <p style={{ fontSize: "12px", color: "#333" }}>v1 of my portfolio.</p>
+            <p style={{ fontSize: "12px", color: "#333" }}>v1.2026.</p>
           </div>
         </div>
       </div>
