@@ -1,5 +1,26 @@
 import { getAllSlugs, getPost } from "@/lib/posts";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = await getPost(slug);
+  if (!post) return {};
+  return {
+    title: `${post.title} — Dennis Grewe`,
+    description: post.preview,
+    openGraph: {
+      title: post.title,
+      description: post.preview,
+      type: "article",
+      publishedTime: post.date,
+    },
+  };
+}
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));

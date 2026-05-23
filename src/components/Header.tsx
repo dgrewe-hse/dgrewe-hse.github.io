@@ -12,7 +12,10 @@ function useTime() {
         minute: "2-digit",
         timeZone: "Europe/Berlin",
       });
-      const offset = "GMT+2";
+      const offset = new Intl.DateTimeFormat("en", {
+        timeZone: "Europe/Berlin",
+        timeZoneName: "short",
+      }).formatToParts(now).find((p) => p.type === "timeZoneName")?.value ?? "CET";
       setDisplay(`${time} ${offset}`);
     };
     tick();
