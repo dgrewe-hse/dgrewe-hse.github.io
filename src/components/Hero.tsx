@@ -110,7 +110,7 @@ export default function Hero() {
             }}
           >
             <Image
-              src="/hero/dennis-isolated.png"
+              src="/hero/dennis-isolated.webp"
               alt=""
               fill
               priority
