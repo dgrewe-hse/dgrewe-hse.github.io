@@ -223,7 +223,7 @@ export default function Hero() {
         {/* Tagline */}
         <div className="hero-anim" style={{ textAlign: "center", maxWidth: "min(560px, 100%)" }}>
           <p style={{ fontSize: "clamp(13px, 1.4vw, 17px)", color: "var(--muted)", marginBottom: "4px" }}>
-            Researching &amp; teaching since 2016.
+            Dennis Grewe: Researching &amp; teaching since 2016.
           </p>
           <p style={{ fontSize: "clamp(13px, 1.4vw, 17px)", color: "var(--muted)" }}>
             Professor of Computer Science at{" "}
