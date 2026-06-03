@@ -153,6 +153,15 @@ export const writingItems: WritingItem[] = [
   },
   {
     type: "blog",
+    title: "Two Worlds, One Problem: The Future of Cross-Border Payments",
+    preview:
+      "Why does the same payment infrastructure cost a corporate treasurer $0.04 and a migrant worker 15%? A four-part exploration of SWIFT's design limits, the de-risking crisis, and the geopolitical race to build the next settlement layer.",
+    date: "Jun 2026",
+    link: "/writing/260603-cross_border_payments",
+    slug: "260603-cross_border_payments",
+  },
+  {
+    type: "blog",
     title: "How Do Programming Novices Use AI — and Are We Teaching It the Right Way?",
     preview:
       "Students already use AI to code. Our experiment at Esslingen University shows that without structured guidance, they offload tasks instead of learning — and what we changed in our introductory programming course.",
