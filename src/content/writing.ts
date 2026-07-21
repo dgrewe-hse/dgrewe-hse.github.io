@@ -166,8 +166,8 @@ export const writingItems: WritingItem[] = [
     preview:
       "The debate about AI and software engineering keeps asking whether developers will lose their jobs. That's the wrong question. Walk through six types of software companies and the same pattern repeats: the thing they used to sell no longer has a price.",
     date: "Jul 2026",
-    link: "/writing/ai-costs-business-models",
-    slug: "ai-costs-business-models",
+    link: "/writing/260702-ai-costs-business-models",
+    slug: "260702-ai-costs-business-models",
   },
   {
     type: "blog",
