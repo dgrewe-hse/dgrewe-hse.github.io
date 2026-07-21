@@ -53,7 +53,9 @@ export default async function PostPage({
         .post-body blockquote { border-left: 2px solid #39FF14; padding-left: 16px; margin: 0 0 1.2em; color: #888; }
         .post-body hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 2.5em 0; }
         .post-body img { display: block; max-width: 100%; height: auto; margin: 2em 0 0.6em; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); background: #0a0a0a; }
-        .post-body em { display: block; font-size: 13px; color: #666; font-style: normal; margin: 0 0 2em; line-height: 1.5; }
+        .post-body em { font-style: italic; }
+        .post-body p:has(> em:only-child) { font-size: 13px; color: #666; font-style: normal; margin: 0 0 2em; line-height: 1.5; }
+        .post-body p:has(> em:only-child) em { font-style: normal; }
       `}</style>
 
       <main style={{ background: "#000", minHeight: "100vh", padding: "clamp(80px, 10vh, 120px) 40px 120px" }}>
