@@ -1,6 +1,7 @@
 import { getAllSlugs, getPost } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import PostBody from "@/components/PostBody";
 
 export async function generateMetadata({
   params,
@@ -96,10 +97,7 @@ export default async function PostPage({
           <hr style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.08)", marginBottom: "48px" }} />
 
           {/* Body */}
-          <div
-            className="post-body"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
+          <PostBody html={post.html} />
         </div>
       </main>
     </>

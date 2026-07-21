@@ -162,6 +162,15 @@ export const writingItems: WritingItem[] = [
   },
   {
     type: "blog",
+    title: "AI Doesn't Just Cost Developer Jobs — It Costs Business Models",
+    preview:
+      "The debate about AI and software engineering keeps asking whether developers will lose their jobs. That's the wrong question. Walk through six types of software companies and the same pattern repeats: the thing they used to sell no longer has a price.",
+    date: "Jul 2026",
+    link: "/writing/ai-costs-business-models",
+    slug: "ai-costs-business-models",
+  },
+  {
+    type: "blog",
     title: "How Do Programming Novices Use AI — and Are We Teaching It the Right Way?",
     preview:
       "Students already use AI to code. Our experiment at Esslingen University shows that without structured guidance, they offload tasks instead of learning — and what we changed in our introductory programming course.",
