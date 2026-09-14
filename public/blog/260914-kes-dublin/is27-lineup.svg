@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 640" role="img" aria-label="IS27 lineup at KES 2026: seven papers across six disciplines">
+  <rect width="680" height="640" fill="#0a0a0a"/>
+
+  <text x="24" y="32" fill="#39FF14" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="0.14em">IS27 LINEUP</text>
+  <text x="24" y="58" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.03em">Seven Papers, Six Disciplines</text>
+  <text x="24" y="78" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="12" letter-spacing="0.04em">7 PRESENTATIONS &#183; 6 DISCIPLINES &#183; THU 15:00&#8211;18:00</text>
+
+  <!-- 1 HEALTH -->
+  <g>
+    <rect x="16" y="96" width="648" height="52" rx="8" fill="#141414" stroke="#2a2a2a"/>
+    <text x="36" y="127" fill="#666" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">1</text>
+    <rect x="56" y="111" width="68" height="22" rx="11" fill="#0f766e"/>
+    <text x="90" y="126" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.08em" text-anchor="middle">HEALTH</text>
+    <text x="138" y="118" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Smart Mirrors for Intrinsic Capacity Assessment</text>
+    <text x="138" y="136" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">E. Batista et al. (11 authors)</text>
+  </g>
+
+  <!-- 2 MGMT -->
+  <g>
+    <rect x="16" y="154" width="648" height="66" rx="8" fill="#141414" stroke="#2a2a2a"/>
+    <text x="36" y="192" fill="#666" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">2</text>
+    <rect x="56" y="176" width="68" height="22" rx="11" fill="#b45309"/>
+    <text x="90" y="191" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.08em" text-anchor="middle">MGMT</text>
+    <text x="138" y="176" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">How Will Generative AI Change Knowledge Transfer</text>
+    <text x="138" y="194" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">in Organizations?</text>
+    <text x="138" y="211" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">T. Marques Da Silva, Jo Scheppach et al. (6 authors)</text>
+  </g>
+
+  <!-- 3 CHEM -->
+  <g>
+    <rect x="16" y="226" width="648" height="66" rx="8" fill="#141414" stroke="#2a2a2a"/>
+    <text x="36" y="264" fill="#666" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">3</text>
+    <rect x="56" y="248" width="68" height="22" rx="11" fill="#be123c"/>
+    <text x="90" y="263" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.08em" text-anchor="middle">CHEM</text>
+    <text x="138" y="248" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Generative-Reflective Agent-Based Method for the</text>
+    <text x="138" y="266" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Extraction of Chemical Information</text>
+    <text x="138" y="283" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">A. Alshehri</text>
+  </g>
+
+  <!-- 4 HCI -->
+  <g>
+    <rect x="16" y="298" width="648" height="66" rx="8" fill="#141414" stroke="#2a2a2a"/>
+    <text x="36" y="336" fill="#666" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">4</text>
+    <rect x="56" y="320" width="68" height="22" rx="11" fill="#6d28d9"/>
+    <text x="90" y="335" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.08em" text-anchor="middle">HCI</text>
+    <text x="138" y="320" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Towards Human-Centered LLM Applications:</text>
+    <text x="138" y="338" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">An App Review Summarization Tool</text>
+    <text x="138" y="355" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">T. M. Kutzner, J. Hois &amp; A. Gerlicher</text>
+  </g>
+
+  <!-- 5 GOV -->
+  <g>
+    <rect x="16" y="370" width="648" height="66" rx="8" fill="#141414" stroke="#2a2a2a"/>
+    <text x="36" y="408" fill="#666" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">5</text>
+    <rect x="56" y="392" width="68" height="22" rx="11" fill="#1d4ed8"/>
+    <text x="90" y="407" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.08em" text-anchor="middle">GOV</text>
+    <text x="138" y="392" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Towards a Comprehensive Framework for Agentic AI</text>
+    <text x="138" y="410" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Governance and Orchestration</text>
+    <text x="138" y="427" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">Y. Ayadi, B. Charroux &amp; L. Sliman</text>
+  </g>
+
+  <!-- 6 EDU -->
+  <g>
+    <rect x="16" y="442" width="648" height="66" rx="8" fill="#141414" stroke="#2a2a2a"/>
+    <text x="36" y="480" fill="#666" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">6</text>
+    <rect x="56" y="464" width="68" height="22" rx="11" fill="#be185d"/>
+    <text x="90" y="479" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.08em" text-anchor="middle">EDU</text>
+    <text x="138" y="464" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Patterns of Generative AI Utilisation in</text>
+    <text x="138" y="482" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Undergraduate Academic Writing</text>
+    <text x="138" y="499" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">M. Gaiduk &amp; W. D. Scherz</text>
+  </g>
+
+  <!-- 7 HEALTH -->
+  <g>
+    <rect x="16" y="514" width="648" height="66" rx="8" fill="#141414" stroke="#2a2a2a"/>
+    <text x="36" y="552" fill="#666" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">7</text>
+    <rect x="56" y="536" width="68" height="22" rx="11" fill="#0f766e"/>
+    <text x="90" y="551" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="0.08em" text-anchor="middle">HEALTH</text>
+    <text x="138" y="536" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Diagnostic Accuracy of Multivoxel MRS for CNS</text>
+    <text x="138" y="554" fill="#fff" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Tumor Grading (virtual)</text>
+    <text x="138" y="571" fill="#888" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">Y. Cardozo V&#233;lez et al. (4 authors)</text>
+  </g>
+
+  <text x="24" y="616" fill="#555" font-family="ui-sans-serif, system-ui, Helvetica, Arial, sans-serif" font-size="11">Source: IS27 programme, KES 2026. &#183; Grewe &#183; Scherz &#183; Gaiduk</text>
+</svg>

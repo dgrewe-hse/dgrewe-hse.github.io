@@ -153,6 +153,15 @@ export const writingItems: WritingItem[] = [
   },
   {
     type: "blog",
+    title: "AI Is Driving the Knowledge and Intelligent Systems at KES 2026.",
+    preview:
+      "A report from Dublin: seven papers in our invited session, two keynotes, and a field that is applying AI everywhere while still refusing to let it operate the system.",
+    date: "Sep 2026",
+    link: "/writing/260914-kes-dublin",
+    slug: "260914-kes-dublin",
+  },
+  {
+    type: "blog",
     title: "Two Worlds, One Problem: The Future of Cross-Border Payments",
     preview:
       "Why does the same payment infrastructure cost a corporate treasurer $0.04 and a migrant worker 15%? A four-part exploration of SWIFT's design limits, the de-risking crisis, and the geopolitical race to build the next settlement layer.",
